@@ -1,6 +1,5 @@
 <p align="center">
-    <img src="logo.png"/>
+    <img src="logo.png" height="400" width="400"/>
 </p>
----
-<h1 style="text-align: center">DELIEVERY</h1>
-<h3 style="text-align: center">Anything. Everywhere. Local.</h3>
+<h1 align="center">DELIEVERY<br><small align="center">Anything. Everywhere. Local.</small></h1>
+<hr>
