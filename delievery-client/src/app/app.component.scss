@@ -29,18 +29,18 @@ ion-menu.md ion-list#inbox-list {
 ion-menu.md ion-list#inbox-list ion-list-header {
   font-size: 22px;
   font-weight: 600;
-
   min-height: 20px;
 }
 
 ion-menu.md ion-list#labels-list ion-list-header {
   font-size: 16px;
-
-  margin-bottom: 18px;
-
   color: #757575;
+}
 
-  min-height: 26px;
+ion-list#labels-list {
+  background-color: var(--ion-color-light);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 ion-menu.md ion-item {

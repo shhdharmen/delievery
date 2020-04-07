@@ -3,24 +3,62 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
+          <ion-list-header>Hi 👋 Jon</ion-list-header>
+          <ion-note>jon@don.com</ion-note>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
-              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+          <ion-menu-toggle
+            auto-hide="false"
+            *ngFor="let p of appPages; let i = index"
+          >
+            <ion-item
+              (click)="selectedIndex = i"
+              routerDirection="root"
+              [routerLinkActive]="'selected'"
+              [routerLink]="[p.url]"
+              lines="none"
+              detail="false"
+            >
+              <ion-icon
+                slot="start"
+                [ios]="p.icon + '-outline'"
+                [md]="p.icon + '-sharp'"
+              ></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
-        </ion-list>
-
-        <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
-
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
+          <ion-item-divider></ion-item-divider>
+          <ion-item detail="false" size="small">
+            <ion-icon
+              slot="start"
+              ios="mail-outline"
+              md="mail-sharp"
+              size="small"
+            ></ion-icon>
+            <ion-label>
+              <small>
+                <a href="mailto:support@delievery.com">support@delievery.com</a>
+              </small>
+            </ion-label>
           </ion-item>
+          <ion-item detail="false">
+            <ion-icon
+              slot="start"
+              ios="call-outline"
+              md="call-sharp"
+              size="small"
+            ></ion-icon>
+            <ion-label>
+              <small><a href="tel:+91XXXXXXXXXX">+91XXXXXXXXXX</a></small>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+        <ion-list id="labels-list" style="width: 100%;">
+          <ion-list-header>&copy; Delievery 2020</ion-list-header>
+          <ion-list-header
+            ><small>
+              Anything. Everywhere. Local.
+            </small></ion-list-header
+          >
         </ion-list>
       </ion-content>
     </ion-menu>
