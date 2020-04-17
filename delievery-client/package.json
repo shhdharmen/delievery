@@ -1,8 +1,11 @@
 {
   "name": "delievery-client",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": {
+    "name": "Dharmen Shah",
+    "url": "https://shhdharmen.github.io"
+  },
+  "homepage": "",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

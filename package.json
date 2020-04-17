@@ -1,12 +1,18 @@
 {
   "name": "delievery",
   "version": "1.0.0",
-  "description": "",
+  "description": "Deliver (or Send) Anything, Everywhere in your Local community.",
   "main": "index.js",
   "scripts": {
+    "client": "cd ./delievery-client && ionic serve",
+    "api": "npm run start:dev --prefix ./delievery-api",
+    "start": "run-p api client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
