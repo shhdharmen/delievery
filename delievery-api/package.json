@@ -30,7 +30,7 @@
     "@nestjs/jwt": "^7.0.0",
     "@nestjs/mongoose": "^6.4.0",
     "@nestjs/passport": "^7.0.0",
-    "@nestjs/platform-express": "^7.0.0",
+    "@nestjs/platform-express": "^9.2.1",
     "authy": "^1.4.0",
     "bcrypt": "^4.0.1",
     "class-validator": "^0.11.1",
